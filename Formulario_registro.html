@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <title>Formulario de registro</title>
+        <meta charset="UTF-8">
+    </head>
+<body>
+<h1> Formulario de registro</h1>
+<form action="/process" method="post">
+    <div>
+        <label>Nombre: </label>
+        <input type="text" name="name" 
+        placeholder="Your name..." >
+    </div>
+    <div> 
+        <label>Apellido: </label>
+        <input type="text" name="lastname"
+        placeholder="Your Lastname">
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="text" name="email" 
+        placeholder="Your email..." >
+    </div>
+    <div>
+        <label> Contraseña: </label>
+        <input type="password" name="Password"
+        placeholder="Your Password">
+    </div>
+    <div>
+        <label> Confirmar Contraseña:</label>
+        <input type="password" name="Password"
+        placeholder="Confirm Password">
+    </div>
+    <div>
+        <label> Cumpleaños:</label>
+        <input type="date" name="dob">
+    </div>
+    <div>
+        <label> Identidad de género</label>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Hombre</strong></label>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Mujer</strong></label>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>No binario</strong></label>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Prefiero no decirlo</strong></label>
+    </div>
+    <div>
+        <label> Una corta descripción de mi:</label>
+        <textarea name="comment" cols="20" rows="3"></textarea>
+    </div>
+    <div>
+        <label> Lenguaje de Programación Favorita:</label>
+        <select name="Lenguaje de programación">
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>C++</option>
+            <option>RUBY</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">Si, me gustaria recibir periodicamente actualizaciones de mi correo.</label>
+    </div>
+        <input type="submit" value="Entrar">
+        <p>Indica un campo requerido.</p>
+</form>
+</body>
+</html>
+
+
+
+
